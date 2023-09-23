@@ -10,7 +10,10 @@ const Footer=()=>{
                   <AiOutlineInstagram className="icon"/>
                   <AiFillLinkedin className="icon"/>
     </div>
-    <p className='contact-us'>Contact us</p>
+   
+    <a className='contact-us' href="https://linktr.ee/praveen4567" target="_blank" rel="noopener noreferrer">
+             <button className='contact-us-button'>Contact Me</button> 
+            </a>
     </div>
   )
 

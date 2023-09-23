@@ -22,15 +22,21 @@ height:25px;
 margin-right: 24px;
 }
 .contact-us{
-color: #3D3C3C;
+color: black;
 font-family: HK Grotesk;
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: 24px; /* 150% */
 margin-bottom:64px;
-margin-left:679px;
-margin-right:600px
+margin-left:689px;
+margin-right:600px;
+
+text-decoration: overline;
+}
+.contact-us-button{
+    background-color: transparent;
+    margin-bottom: 15px;
 }
 .icon-pa{
     background: #F5F7FA;
@@ -68,7 +74,7 @@ line-height: 16px; /* 133.333% */
     }
     .contact-us{
         margin-left: 160px;
-       
+       text-decoration: none;
         margin-right: 150px;
         color: #3D3C3C;
 font-family: HK Grotesk;

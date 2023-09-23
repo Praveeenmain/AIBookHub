@@ -21,7 +21,7 @@ class AiChatBot extends Component{
                     <iframe className="chat-bot-container-iframe"  title="AIchatbot" src="https://praveen312-book.hf.space"></iframe>
                 
                     </div>
-                <Link to="/"><button className="back-button"> Back</button> </Link>  
+                <Link to="/bookAi"><button className="back-button"> Back</button> </Link>  
             </div>
 
             </>

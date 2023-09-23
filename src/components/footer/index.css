@@ -1,0 +1,80 @@
+.icons-container{
+    width: 145px;
+    height: 21px;
+    flex-shrink: 0;
+    margin-top:166px;
+    margin-left:647px;
+    margin-right:648px;
+    margin-bottom:16px;
+    display:flex;
+   
+}
+.icon{
+    color: #3D3C3C;
+text-align: center;
+font-family: Font Awesome 5 Brands;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width:28px;
+height:25px;
+margin-right: 24px;
+}
+.contact-us{
+color: #3D3C3C;
+font-family: HK Grotesk;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+margin-bottom:64px;
+margin-left:679px;
+margin-right:600px
+}
+.icon-pa{
+    background: #F5F7FA;
+}
+@media (max-width:767px){
+    .icon{
+        color: #3D3C3C;
+    text-align: center;
+    font-family: Font Awesome 5 Brands;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:28px;
+    height:25px;
+    margin-right: 24px;
+    }
+    .icons-container{
+        width: 161px;
+        height: 16px;
+        flex-shrink: 0;
+        margin-left: 125px;
+        margin-right: 124px;
+
+    }
+  
+    .icon-pa{
+        color: #3D3C3C;
+font-family: HK Grotesk;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 133.333% */
+
+    }
+    .contact-us{
+        margin-left: 160px;
+       
+        margin-right: 150px;
+        color: #3D3C3C;
+font-family: HK Grotesk;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 133.333% */
+    }
+}

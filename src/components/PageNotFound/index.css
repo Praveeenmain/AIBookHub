@@ -1,0 +1,90 @@
+@media (min-width:768px){
+    .not-page-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top:150px;
+        margin-bottom: 244px;
+    
+    }
+    .gobackbutton{
+    width:164px;
+    border-radius: 12px;
+    background: #0284C7;
+    height:48px;
+    color:white;
+    }
+    .page-heading{
+        color: var(--light-blue-gray-700, #334155);
+        text-align: center;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 48px; /* 150% */
+    }
+    .page-paragraph{
+    color: var(--light-blue-gray-600, #475569);
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    }
+}
+
+
+
+@media (max-width:767px){
+    .not-page-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 159px;
+        margin-bottom: 158px;
+    }
+
+   .small-not-logo {
+    width: 225px;
+    height: 151.001px;
+    flex-shrink: 0;
+   } 
+   .page-paragraph{
+        color: var(--light-blue-gray-600, #475569);
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 171.429% */
+        margin-left: 24px;
+        margin-right: 24px;
+
+   }
+   .page-heading{
+    color: var(--light-blue-gray-700, #334155);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+   
+   }
+   .gobackbutton{
+    width: 100px auto;
+    height: 16px auto; 
+    color: var(--light-base-white, #FFF);
+    background: #0284C7;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius:4px;
+    line-height: 16px; /* 133.333% */
+   }
+
+}

@@ -1,0 +1,226 @@
+
+
+@media (min-width:768px){
+   .PageContainer{
+    margin-top:45px;
+    margin-left:100px;
+
+   }
+   .PageHeading{
+    color: var(--light-blue-gray-800, #1E293B);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px; /* 160% */;
+    color:Light / blue-gray / 800;
+   }
+   .PageParagraph{
+      width: 998px;
+      color: var(--light-blue-gray-600, #475569);
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 32px; /* 160% */
+   }
+   .Carousel{
+      width: 1240px;
+      height: 424px;
+      flex-shrink: 0;
+      border-radius: 16px;
+      background: #FFF;
+      /* Light / Shadow / base */
+      box-shadow: 0px 1px 2px 0px rgba(96, 97, 112, 0.16), 0px 0px 1px 0px rgba(40, 41, 61, 0.08);
+     
+   }
+   .FindHeading{
+    display:flex;
+    justify-content:space-between;
+   }
+   .RatedBooks{
+      color: var(--light-blue-gray-800, #1E293B);
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 133.333% */;
+      margin-left:71px;
+      margin-top:36px;
+   }
+   .find-books-button{
+    border-radius: 4px;
+    background: #0284C7;
+    color: var(--light-blue-gray-50, #F8FAFC);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    width:104px;
+    height:30px;
+    margin-right:71px;
+    margin-top:34px;
+}
+
+.Loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:110px;
+
+}
+.failure-image-container-home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.failure-image-home{
+width: 347px;
+height: 170.002px;
+flex-shrink: 0;
+}
+.retry-button-home{
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+
+border-radius: 4px;
+background-color: #0284C7;
+color: var(--light-base-white, #FFF);
+font-family: Inter;
+font-size: 9.333px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 171.429% */
+}
+.failure-para{
+color: var(--light-blue-gray-600, #475569);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+.find-books-small{
+  display: none;
+}
+}
+@media (max-width:767px){
+  .PageContainer{
+    margin-left:24px;
+    margin-right: 24px fixed;
+    margin-top: 24px fixed; 
+    width:1000px fixed;
+  }
+    .PageHeading{
+      color: var(--light-blue-gray-800, #1E293B);
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 32px; /* 160% */
+    }
+    .PageParagraph{
+    color: var(--light-blue-gray-600, #475569);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    }
+    .find-books-button{
+      display: none;
+    }
+    .find-books-small{
+      display: flex;
+      padding: 10px 20px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 133.333% */
+      border-radius: 4px;
+      background: #0284C7;
+     color: #FFF;
+    
+    }
+    .Carousel{
+      width: 360px;
+      height: 203px;
+      flex-shrink: 0;
+      background: #FFF;
+      box-shadow: 0px 0.4434px 0.88679px 0px rgba(96, 97, 112, 0.16), 0px 0px 0.4434px 0px rgba(40, 41, 61, 0.08);
+    }
+    .Link{
+      
+      text-decoration: none;
+    }
+    .RatedBooks{
+      color: var(--light-blue-gray-800, #1E293B);
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 150% */
+      text-align: left;
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+    .failure-image-home{
+      width: 243.778px;
+height: 120px;
+flex-shrink: 0;
+    }
+    .failure-para{
+      color: var(--light-blue-gray-600, #475569);
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 133.333% */
+    }
+    .retry-button-home{
+      color: var(--light-base-white, #FFF);
+/* Action / Button / Small */
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 133.333% */
+display: flex;
+padding: 8px 16px;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+background: #0284C7;
+    }
+    .failure-image-container-home{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #FFF;
+    }
+    .Loader-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+}

@@ -1,0 +1,57 @@
+.Book-item-container{
+    margin-right: 210px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:15px;
+    margin-top: 15px;
+}
+.book-image{
+width: 133px;
+height: 155px;
+flex-shrink: 0;
+border-radius: 8px;
+margin-right: 20px;
+}
+.book-title{
+    width:146px;
+    color: var(--light-blue-gray-700, #334155);
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; 
+
+}
+.Author-name{
+    color: var(--light-blue-gray-600, #475569);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 114.286% */
+}
+.Link-item{
+    text-decoration: none;
+    color:black
+}
+.status{
+color: #0284C7;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 133.333% */
+}
+.star-icon{
+fill: var(--light-amber-400, #FBBF24);
+width: 13px;
+height: 13px;
+flex-shrink: 0;
+
+}
+@media (max-width:767px){
+  .Link-item{
+    display: flex;
+  }
+}

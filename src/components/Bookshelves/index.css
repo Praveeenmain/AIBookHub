@@ -1,0 +1,243 @@
+.catergory-button{
+    list-style-type: none;
+}
+
+
+
+
+@media (min-width:768px){
+    .Booksbgcontainer{
+        width: 1440px;
+       
+        background: #F5F7FA;
+        padding-left:150px;
+        padding-top:100px;
+        display:flex;
+        
+    }
+    .BookCatergoryContainer{
+        width: 256px;
+        background-size: cover;
+        flex-shrink: 0;
+        background-color: #FFF;
+        align-items: center;
+        padding-left:35px;
+       
+    }
+    .Heading{
+        color: var(--light-blue-gray-700, #334155);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        padding-top:32px;
+        padding-left:32px;
+        padding-right:100px;
+    }
+    .CatergoryBooksContainer{
+        padding-left:32px;
+        padding-top:55px;
+        width:1034px;
+        background-size: cover;
+    }
+    .CatergorySearchContainer{
+        display:flex;
+        padding-left:32px;
+        justify-content: space-between;
+    }
+    .Cat{
+        color: var(--light-blue-gray-700, #334155);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .SearchContainer{
+        display: flex;
+        padding: 6px 16px;
+        align-items: flex-start;
+        align-self: stretch;
+        margin-right:151px;
+    }
+    .SearchInput{
+        height:auto;
+       width:auto;
+    }
+    .BooksShelvesContainer{
+        height:4900px;
+        width:1024px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+    }
+    .active-button{
+        color: #0284C7;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+    }
+    .button{
+        background-color: transparent;
+        border:0px;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+    }
+    .list-button{
+        list-style-type: none;
+        margin-bottom: 12px;
+    }
+   .empty-search-view-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:137px;
+    margin-bottom: 310px;
+   }
+   .empty-pargraph{
+    color: var(--light-blue-gray-700, #334155);
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+   }
+   .failure-image-container-Book{
+    margin-top:193px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .retry-button-book{
+    display: flex;
+padding: 12px 24px;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+border-radius: 4px;
+color: var(--light-base-white, #FFF);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 171.429% */
+background: #0284C7;
+   }
+   .footer-container{
+       margin-left: -300px;
+   }
+   .SearchContainer-small{
+    display: none;
+   }
+   .Heading-small{
+    display: none;
+   }
+}
+@media (max-width:767px){
+    .Booksbgcontainer{
+       padding-left:45px;
+    }
+    .SearchContainer-small{
+        margin-left: 24px;
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+    }
+    .SearchContainer{
+        display: none;
+    }
+    .SearchInput{
+        border-radius: 4px;
+        display: flex;
+        padding: 6px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        gap: 10px;
+flex-shrink: 0;
+
+    }
+    .SearchButton{
+        width: 52px;
+height: 34px;
+flex-shrink: 0;
+border-radius: 0px 3px 3px 0px;
+background: #EDEFF1;
+    }
+    .Heading-small{
+        color: var(--light-blue-gray-700, #334155);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 150% */
+        margin-left: 24px;
+    }
+    .list-button{
+        list-style-type: none;
+        margin-left:12px;
+        margin-bottom: 12px;
+    }
+    .BookCatergoryContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right:75px;
+        margin-left: -65px;
+    }
+    .button{
+        border-radius: 25px;
+border: 1px solid #0284C7;
+color: #0284C7;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 133.333% */
+background-color: transparent;
+    }
+    .active-button{
+        background-color: #0284C7;
+        color:white;
+    }
+    .Cat{
+        display: none;
+    }
+    .BooksShelvesContainer{
+        margin-left: -45px;
+    }
+    .Heading{
+        display: none;
+    }
+    .Loader-container-shuff{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:-35px;
+    }
+    .failure-image-container-Book{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left:-35px;
+    }
+    .retry-button-book{
+        display: flex;
+padding: 8px 16px;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+background: #0284C7;
+color:#FFF
+    }
+}

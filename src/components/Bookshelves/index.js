@@ -123,9 +123,7 @@ class Bookshelves extends Component{
                      <BookItem  bookDetails={eachbook} key={eachbook.id}/>
                   ))
                 }
-                <div className='footer-container'>
-                 <Footer/>
-                 </div>
+                
               </ul>
               )
               
@@ -255,7 +253,9 @@ class Bookshelves extends Component{
                             }
                             
                         </div>
-                        
+                        <div className='footer-container'>
+                 <Footer/>
+                 </div>
                                 
                              
                       

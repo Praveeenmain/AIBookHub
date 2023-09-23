@@ -16,7 +16,7 @@ class App extends Component {
     return (
       <Switch>
         <Route exact path="/login" component={Login} />
-        <ProtectedRoute exact path="/bookAi" component={Home} />
+        <ProtectedRoute exact path="/" component={Home} />
         <ProtectedRoute exact path="/chatbot" component={AiChatBot}/>
         <ProtectedRoute exact path="/shelf" component={Bookshelves}/>
         <ProtectedRoute exact path="/books/:id" component={Item}/>

@@ -30,7 +30,7 @@ class NavBar extends Component {
                     <img className="Websitelogoimg"  src="https://res.cloudinary.com/dgviahrbs/image/upload/v1694865968/Group_7731_uadmer.png" alt="website logo"/>
                 </div>
                    <ul className="OptionContainer">
-                            <Link className="link" to="/bookAi"> <li className={`Option ${activeHome}`}>Home</li> </Link>  
+                            <Link className="link" to="/"> <li className={`Option ${activeHome}`}>Home</li> </Link>  
                             <Link className="link" to="/shelf"><li className={`Option ${activeShelves}`}>Bookshelves</li> </Link> 
                            
                     <button className="Logout" onClick={onClickLogout}>Logout</button>

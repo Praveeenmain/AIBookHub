@@ -74,8 +74,8 @@ class Item extends Component{
 
     }
     renderSuccessView=()=>{
-        const{BookDetails,apistatus}=this.state
-        console.log(apistatus)
+        const{BookDetails}=this.state
+      
         return(
             <div>
             <div className='ItemcardContainer'>

@@ -11,6 +11,7 @@ class Login extends Component {
     password: '',
     showSubmitError: '',
     errormsg: '',
+    isPasswordChecked: false,
   }
 
   onSuccessLogin = jwttoken => {
@@ -56,9 +57,13 @@ class Login extends Component {
       password: event.target.value,
     })
   }
-
+  onChecked = event => {
+    this.setState({
+      isPasswordChecked: event.target.checked,
+    })
+  }
   render() {
-    const {username, password, showSubmitError, errormsg} = this.state
+    const {username, password, showSubmitError, errormsg,isPasswordChecked} = this.state
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
@@ -76,7 +81,7 @@ class Login extends Component {
           <div className="login-cred-container">
             <div className="login-base">
               <img
-                src="https://res.cloudinary.com/dgviahrbs/image/upload/v1694865968/Group_7731_uadmer.png"
+                src="https://res.cloudinary.com/dgviahrbs/image/upload/v1695566650/gpt-bookshelf-low-resolution-logo-black-on-transparent-background_f5zfuu.png" className='logo-bg'
                 alt="website logo"
               />
               <form onSubmit={this.submitform}>
@@ -86,7 +91,7 @@ class Login extends Component {
                   </label>
                   <input
                     className="input"
-                    placeholder="Gilroy Brown"
+                    placeholder="Praveen"
                     id="username"
                     type="text"
                     value={username}
@@ -97,14 +102,35 @@ class Login extends Component {
                   <label htmlFor="password" className="label">
                     Password*
                   </label>
-                  <input
-                    className="input"
-                    placeholder="********"
-                    id="password"
-                    type="password"
-                    onChange={this.onChangePassword}
-                    value={password}
-                  />
+                  
+                  
+                    {isPasswordChecked && (
+                    <input
+                      value={password}
+                      className="input"
+                      id="password"
+                      placeholder="Password"
+                      type="text"
+                      onChange={this.onChangePassword}
+                    />
+                  )}
+                  {!isPasswordChecked && (
+                   <input
+                   className="input"
+                   placeholder="********"
+                   id="password"
+                   type="password"
+                   onChange={this.onChangePassword}
+                   value={password}
+                 />
+                  )}
+                  <div>
+                    <input  id="checkBox"
+                      type="checkbox"
+                      onClick={this.onChecked}/>
+                      <label className="label" htmlFor="checkBox"> ShowPassword</label>
+                  </div>
+
                 </div>
                 <button type="submit" className="Login-button">
                   Login
@@ -121,8 +147,8 @@ class Login extends Component {
               </div>
               <div className="logo-sm-container">
             <img
-              src="https://res.cloudinary.com/dgviahrbs/image/upload/v1694865968/Group_7731_uadmer.png"
-              alt="logo"
+              src="https://res.cloudinary.com/dgviahrbs/image/upload/v1695566650/gpt-bookshelf-low-resolution-logo-black-on-transparent-background_f5zfuu.png"
+              className='website-logo-small' alt="logo"
             />
           
               </div>
@@ -134,7 +160,7 @@ class Login extends Component {
                 </label>
                 <input
                   id="smUsername"
-                  placeholder="Gilroy Brown"
+                  placeholder="Praveen"
                   className="input-sm"
                   type="text"
                   value={username}
@@ -145,7 +171,20 @@ class Login extends Component {
                 <label htmlFor="smPassword" className="label-sm">
                   Password*
                 </label>
-                <input
+                
+                 
+                 {isPasswordChecked && (
+                    <input
+                      value={password}
+                      className="input-sm"
+                      id="password"
+                      placeholder="********"
+                      type="text"
+                      onChange={this.onChangePassword}
+                    />
+                  )}
+                  {!isPasswordChecked && (
+                  <input
                   id="smPassword"
                   placeholder="********"
                   className="input-sm"
@@ -153,6 +192,26 @@ class Login extends Component {
                   onChange={this.onChangePassword}
                   value={password}
                 />
+                  )}
+                  <div>
+                    <input  id="checkBox"
+                      type="checkbox"
+                      onClick={this.onChecked}/>
+                      <label className="label" htmlFor="checkBox"> ShowPassword</label>
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
               </div>
               <button type="submit" className="login-button-sm">
                 Login

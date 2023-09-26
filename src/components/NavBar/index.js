@@ -27,7 +27,7 @@ class NavBar extends Component {
                 <div className="NavBarLargeContainer">
                 <div className="Websitelogo">
                         
-                    <img className="Websitelogoimg"  src="https://res.cloudinary.com/dgviahrbs/image/upload/v1694865968/Group_7731_uadmer.png" alt="website logo"/>
+                    <img className="Websitelogoimg"  src="https://res.cloudinary.com/dgviahrbs/image/upload/v1695566650/gpt-bookshelf-low-resolution-logo-black-on-transparent-background_f5zfuu.png" alt="website logo"/>
                 </div>
                    <ul className="OptionContainer">
                             <Link className="link" to="/"> <li className={`Option ${activeHome}`}>Home</li> </Link>  
@@ -40,7 +40,7 @@ class NavBar extends Component {
                 
                  <div className='navbar-small'>
                        <div>
-                        <img src="https://res.cloudinary.com/dgviahrbs/image/upload/v1695404264/Group_7732_josgka.png" alt="website logo"/>
+                        <img className='website-logo-sm' src="https://res.cloudinary.com/dgviahrbs/image/upload/v1695566650/gpt-bookshelf-low-resolution-logo-black-on-transparent-background_f5zfuu.png" alt="website logo"/>
                        </div>
                         <div>
                            

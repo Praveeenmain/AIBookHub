@@ -81,9 +81,20 @@
     .login-bg-small-container{
       display: none;
     }
+    .logo-bg{
+      width: 130px;
+      height:95px;
+      border-radius: 15px;
+    }
   }
   
   @media (max-width: 767px) {
+    .website-logo-small{
+      height:95px;
+      width:120px;
+      margin-left: -10px;
+      margin-bottom: 10px;
+    }
       .Login-bg-container{
         display: none;
       }

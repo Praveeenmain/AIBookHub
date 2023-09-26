@@ -98,7 +98,7 @@ class Bookshelves extends Component{
             title:eachBook.title
 
          }))
-        console.log(UpdatedData)
+       
        this.setState({
         BookDetails:UpdatedData,
         apiStatus:apiStatusConstants.success

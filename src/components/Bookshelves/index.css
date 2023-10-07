@@ -144,6 +144,17 @@ background: #0284C7;
 @media (max-width:767px){
     .Booksbgcontainer{
        padding-left:45px;
+      
+    }
+    .empty-search-view-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .no-search-image{
+        height:250px;
+        width:400px;
     }
     .SearchContainer-small{
         margin-left: 24px;

@@ -12,7 +12,7 @@ class AiChatBot extends Component{
             <NavBar/>
             <div className="chat">
                     <div>
-                        <p className="ask-summary"> Type Book name for summary</p>
+                        <p className="ask-summary"> Ask Book Information</p>
                     </div>
             
                     <div className="chat-bot-container">

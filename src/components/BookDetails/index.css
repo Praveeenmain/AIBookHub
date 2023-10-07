@@ -268,7 +268,48 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 150% */
 }
+.amount{
+  font-weight:bold;
+  color:red;
+  font-size:25px;
+}
 
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controller-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.quantity-controller-icon {
+  color: #616e7c;
+  width: 16px;
+  height: 16px;
+}
+
+.quantity {
+  color: #616e7c;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.add-cart-button{
+    background-color: #0284C7;
+    color:black;
+    border:0px;
+    height:25px;
+    width:95px;
+    color:white;
+    border-radius:5px;
+}
   
 
 }
@@ -396,8 +437,47 @@ border-radius: 8px;
 background: #0284C7;
 color:white;
   }
-
-
+  .quantity-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-controller-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .quantity-controller-icon {
+    color: #616e7c;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .quantity {
+    color: #616e7c;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .add-cart-button{
+      background-color: #0284C7;
+      color:black;
+      border:0px;
+      height:25px;
+      width:95px;
+      color:white;
+      border-radius:5px;
+  }
+  .amount{
+    font-weight:bold;
+    color:red;
+    font-size:20px;
+  }
+  
 
 
 }

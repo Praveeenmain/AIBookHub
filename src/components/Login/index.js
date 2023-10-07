@@ -91,7 +91,7 @@ class Login extends Component {
                   </label>
                   <input
                     className="input"
-                    placeholder="Praveen"
+                    placeholder="aakash"
                     id="username"
                     type="text"
                     value={username}
@@ -109,7 +109,7 @@ class Login extends Component {
                       value={password}
                       className="input"
                       id="password"
-                      placeholder="Password"
+                      placeholder="sky@007"
                       type="text"
                       onChange={this.onChangePassword}
                     />
@@ -160,7 +160,7 @@ class Login extends Component {
                 </label>
                 <input
                   id="smUsername"
-                  placeholder="Praveen"
+                  placeholder="aakash"
                   className="input-sm"
                   type="text"
                   value={username}
@@ -178,7 +178,7 @@ class Login extends Component {
                       value={password}
                       className="input-sm"
                       id="password"
-                      placeholder="********"
+                      placeholder="sky@007"
                       type="text"
                       onChange={this.onChangePassword}
                     />

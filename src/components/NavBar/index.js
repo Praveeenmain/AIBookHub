@@ -32,8 +32,38 @@ class NavBar extends Component {
                    <ul className="OptionContainer">
                             <Link className="link" to="/"> <li className={`Option ${activeHome}`}>Home</li> </Link>  
                             <Link className="link" to="/shelf"><li className={`Option ${activeShelves}`}>Bookshelves</li> </Link> 
-                           
-                    <button className="Logout" onClick={onClickLogout}>Logout</button>
+                            <Link className="link" to="/cart" > <li className={`Option`}> Cart </li></Link>       
+                   
+                    <Popup
+                 
+                    modal
+                    trigger={
+                      <button className="Logout" >Logout</button>
+                    }
+                  >
+                    {(close) => (
+                      <div>
+                        <div>
+                          <p>Are you sure, you want to logout</p>
+                        </div>
+                        <button
+                          type="button"
+                          className="trigger-button"
+                          onClick={() => close()}
+                        >
+                          Cancel
+                        </button>
+                        <button
+                          type="button"
+                          onClick={onClickLogout}
+                          className='Logout-pop-button'
+                        >
+                          Confirm
+                        </button>
+                      </div>
+                    )}
+                  </Popup>
+                   
                    
                     </ul>
                 </div>
@@ -62,10 +92,59 @@ class NavBar extends Component {
          
     <Link to="/" style={{ textDecoration: 'none' }}>     <li  onClick={() => close()} className='li'> Home</li>   </Link>  
      <Link  to="/shelf" style={{ textDecoration: 'none' }}>  <li  onClick={() => close()} className='li'>Bookshelves</li>   </Link>
+     <Link  to="/cart" style={{ textDecoration: 'none' }}>  <li  onClick={() => close()} className='li'>Cart</li>   </Link>
          
+         <br/>
          
-         
-         <button className="Logout" onClick={onClickLogout}>Logout</button>
+      
+
+                <Popup
+                 
+                 modal
+                 trigger={
+                   <button className="Logout" >Logout</button>
+                 }
+               >
+                 {(close) => (
+                   <div>
+                     <div>
+                       <p>Are you sure, you want to logout</p>
+                     </div>
+                     <button
+                       type="button"
+                       className="trigger-button"
+                       onClick={() => close()}
+                     >
+                       Cancel
+                     </button>
+                     <button
+                       type="button"
+                       onClick={onClickLogout}
+                       className='Logout-pop-button'
+                     >
+                       Confirm
+                     </button>
+                   </div>
+                 )}
+               </Popup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
          <button className='close-button' onClick={() => close()}> <img src="https://res.cloudinary.com/dgviahrbs/image/upload/v1695449789/Solid_kgyzsb.svg" alt="closeButton"/> </button>
          </div>
      )}

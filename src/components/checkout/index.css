@@ -1,0 +1,36 @@
+.checkOut-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-button {
+    color: white;
+    background-color: blue;
+    border: 0px;
+    height: 35px;
+    width: 120px;
+    border-radius: 10px;
+  }
+
+  @media (max-width:768px){
+    .checkOut-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .home-button {
+        color: white;
+        background-color: blue;
+        border: 0px;
+        height: 30px;
+        width: 90px;
+        border-radius: 10px;
+      }
+      .construction-image{
+        height:600px;
+        width:450px;
+        background-size: cover;
+      }
+  }

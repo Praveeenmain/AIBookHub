@@ -1,10 +1,10 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import NavBar from '../NavBar'
-import {BsFillStarFill} from 'react-icons/bs'
+import {BsFillStarFill,BsPlusSquare, BsDashSquare} from 'react-icons/bs'
 import {TailSpin} from 'react-loader-spinner'
 
-
+import CartContext from '../../context/CartContext'
 
 import {Link} from 'react-router-dom'
 import Footer from '../footer'
@@ -20,7 +20,8 @@ const apiStatusConstants = {
 class Item extends Component{
     state={
        BookDetails:{},
-       apistatus:apiStatusConstants.inProgress
+       apistatus:apiStatusConstants.inProgress,
+       quantity:1
     }
     componentDidMount(){
         this.bookDetails()
@@ -73,10 +74,38 @@ class Item extends Component{
         }
 
     }
-    renderSuccessView=()=>{
-        const{BookDetails}=this.state
-      
-        return(
+    onDecrementQuantity = () => {
+        const {quantity} = this.state
+        if (quantity > 1) {
+          this.setState(prevState => ({quantity: prevState.quantity - 1}))
+        }
+      }
+    
+      onIncrementQuantity = () => {
+        this.setState(prevState => ({quantity: prevState.quantity + 1}))
+      }
+    renderSuccessView=()=>(
+        <CartContext.Consumer>
+      {
+        value=>{
+            const{BookDetails,quantity}=this.state
+            
+            const {addCartItem} = value
+            const onClickAddToCart = () => {
+               
+                const itemToAdd = {
+                  id: BookDetails.Id, 
+                  title: BookDetails.title,
+                  Authorname: BookDetails.Authorname,
+                  CoverPic: BookDetails.CoverPic,
+                  Rating: BookDetails.Rating,
+                  quantity: quantity, 
+                };
+              
+                
+                addCartItem(itemToAdd);
+              };
+         return(
             <div>
             <div className='ItemcardContainer'>
                 <div className='BookPicStatusContainer'>
@@ -92,7 +121,36 @@ class Item extends Component{
                             <p className='AvgRating'> {BookDetails.Rating}</p>
                             
                         </div>
-                        <p>Status:<span className='Status'>{BookDetails.readStatus}</span> </p>
+                         <button className='add-cart-button' onClick={onClickAddToCart}> Add Cart</button>
+                         <div className="quantity-container">
+        <button
+          type="button"
+          className="quantity-controller-button"
+          onClick={this.onDecrementQuantity}
+          data-testid="minus"
+        >
+          <BsDashSquare className="quantity-controller-icon" />
+        </button>
+          <p>{quantity}</p>
+        <button
+          type="button"
+          className="quantity-controller-button"
+          onClick={this.onIncrementQuantity}
+          data-testid="plus"
+        >
+          <BsPlusSquare className="quantity-controller-icon" />
+        </button>
+      </div>
+                         <h1 className='amount'> Price:₹{(BookDetails.Rating *100)/2 }</h1>
+                      
+                         <div>
+      
+     
+          </div>
+    
+
+
+
                     </div>
                 </div>
                 <hr className='line'/>
@@ -109,14 +167,22 @@ class Item extends Component{
                 
                 
             </div>
-        <div>
-         <Footer/>
-        </div>
+            <div>
+            <Footer/>
             </div>
+            </div>
+
          
         )
+        }
+      }
+       
+      
+       
+        </CartContext.Consumer>
+       
 
-    }
+    )
     renderFailure=()=>{
         return(
             <div className="failure-image-container">

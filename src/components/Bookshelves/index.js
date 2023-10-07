@@ -75,6 +75,7 @@ class Bookshelves extends Component{
         })
        const jwtToken = Cookies.get('jwt_token')
        const{bookname,activeFilter}=this.state
+    
         
       
        const apiUrl = `https://apis.ccbp.in/book-hub/books?shelf=${activeFilter}&search=${bookname}`
@@ -132,7 +133,7 @@ class Bookshelves extends Component{
              }else{
               return(
                 <div className='empty-search-view-container'>
-                 <img src="https://res.cloudinary.com/dgviahrbs/image/upload/v1695292224/Asset_1_1_polum4.jpg" alt="no Search"/>
+                 <img className='no-search' src="https://res.cloudinary.com/dgviahrbs/image/upload/v1695292224/Asset_1_1_polum4.jpg" alt="no Search"/>
                  <p className='empty-pargraph'> Your search for {bookname} did not find any matches.</p>
                 
                 </div>

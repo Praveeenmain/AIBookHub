@@ -36,7 +36,7 @@ line-height: 16px; /* 114.286% */
     color:black
 }
 .status{
-color: #0284C7;
+color: red;
 font-family: Inter;
 font-size: 12px;
 font-style: normal;
